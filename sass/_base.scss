@@ -10,6 +10,10 @@
     --color-light-gray: hsl(0, 0%, 98%);
 }
 
+$bp-largest: 1440px;
+$bp-medium: 1050px;
+$bp-smallest: 406px; 
+
 * {
     margin: 0;
     padding: 0;

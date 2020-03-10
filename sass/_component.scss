@@ -2,32 +2,48 @@
     &__col-1 {
         display: flex;
         flex-grow: 2;
+        flex-shrink: 1;
         align-items: center;
         justify-content: flex-end;
+
+        @media only screen and (max-width: $bp-medium) {
+            justify-content: center;
+        }
     }
 
     &__col-2 {
         display: flex;
         flex-direction: column;
+        flex-shrink: 1;
         flex-grow: 1;
         align-items: center;
         justify-content: space-evenly;
+
     }
 
     &__col-3 {
         display: flex;
+        flex-shrink: 1;
         flex-grow: 2;
         align-items: center;
         justify-content: flex-start;
+
+        @media only screen and (max-width: $bp-medium) {
+            justify-content: center;
+        }
     }
 }
 
 .box {
-    height: 14.5rem;
-    width: 22rem;
+    max-height: 14.5rem;
+    max-width: 22rem;
     box-shadow: 0 14px 28px rgba(65, 57, 57, 0),
         0 10px 10px rgba(0, 0, 0, 0.22);
     border-radius: .3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-top: 1.5rem;
+    }
 
     &-title {
         color: var(--color-dark-blue);
@@ -55,6 +71,14 @@
 
     &-cyan {
         border-top: .2rem solid var(--color-cyan);
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-top: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-top: 5rem;
+        }
     }
 
     &-orange {
@@ -63,6 +87,14 @@
 
     &-blue {
         border-top: .2rem solid var(--color-blue);
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-bottom: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-bottom: 4rem;
+        }
     }
 }
 
@@ -72,20 +104,41 @@
         color: var(--color-dark-blue);
         letter-spacing: .8px;
 
+
         &-pre {
             font-weight: 200;
+            text-align: center;
+
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 1.6rem;
+            }
         }
 
         &-post {
             font-weight: 600;
+            text-align: center;
+
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 1.6rem;
+            }
         }
     }
 
     &__caption {
         margin-top: 1rem;
-        text-align: center;
+        display: flex;
+        justify-content: center;
         color: var(--color-grayish-blue);
         font-size: 0.9rem;
+
+        p {
+            text-align: center;
+            width: 75%;
+
+            @media only screen and (min-width: $bp-medium) {
+                width: 40%;
+            }
+        }
     }
 
 }
