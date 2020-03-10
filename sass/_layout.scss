@@ -1,0 +1,34 @@
+.header {
+    height: 11rem;
+
+    &__spacer {
+        height: 3rem;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+.content {
+    display: flex;
+    height: 33rem;
+    margin-top: 2.2rem;
+    // border: 1px blue solid;
+}
+
+.box {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

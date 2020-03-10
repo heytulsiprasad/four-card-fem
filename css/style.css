@@ -1,0 +1,120 @@
+:root {
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+  --color-dark-blue: hsl(234, 12%, 34%);
+  --color-grayish-blue: hsl(229, 6%, 66%);
+  --color-light-gray: hsl(0, 0%, 98%); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  font-size: 15px;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-light-gray); }
+
+.content__col-1 {
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+  justify-content: flex-end; }
+
+.content__col-2 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.content__col-3 {
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+  justify-content: flex-start; }
+
+.box {
+  height: 14.5rem;
+  width: 22rem;
+  box-shadow: 0 14px 28px rgba(65, 57, 57, 0), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: .3rem; }
+  .box-title {
+    color: var(--color-dark-blue);
+    font-weight: 600;
+    font-size: 1.32rem; }
+  .box-description {
+    color: var(--color-grayish-blue);
+    font-size: .85rem;
+    font-weight: 400;
+    margin-top: .5rem; }
+  .box-icon {
+    position: relative;
+    align-self: flex-end;
+    top: 1rem;
+    right: .5rem; }
+  .box-red {
+    border-top: 0.2rem solid var(--color-red); }
+  .box-cyan {
+    border-top: 0.2rem solid var(--color-cyan); }
+  .box-orange {
+    border-top: 0.2rem solid var(--color-orange); }
+  .box-blue {
+    border-top: 0.2rem solid var(--color-blue); }
+
+.header__title {
+  font-size: 2rem;
+  color: var(--color-dark-blue);
+  letter-spacing: .8px; }
+  .header__title-pre {
+    font-weight: 200; }
+  .header__title-post {
+    font-weight: 600; }
+
+.header__caption {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--color-grayish-blue);
+  font-size: 0.9rem; }
+
+.attribution {
+  font-size: 11px;
+  align-self: center; }
+
+.attribution a {
+  text-decoration: none;
+  color: #3e52a3; }
+
+.header {
+  height: 11rem; }
+  .header__spacer {
+    height: 3rem; }
+  .header__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.content {
+  display: flex;
+  height: 33rem;
+  margin-top: 2.2rem; }
+
+.box {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; }
+
+.footer {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }

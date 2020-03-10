@@ -1,0 +1,33 @@
+
+:root {
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+
+    --color-dark-blue: hsl(234, 12%, 34%);
+    --color-grayish-blue: hsl(229, 6%, 66%);
+    --color-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+body {      
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-light-gray);
+}
+
