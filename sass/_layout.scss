@@ -34,10 +34,8 @@
 }
 
 .footer {
+
     height: 4rem;
     display: flex;
     justify-content: center;
-    border: 1px solid blue;
-
-    @media only screen and (max-width: $bp-medium) {}
 }

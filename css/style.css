@@ -162,5 +162,4 @@ body {
 .footer {
   height: 4rem;
   display: flex;
-  justify-content: center;
-  border: 1px solid blue; }
+  justify-content: center; }
