@@ -27,7 +27,6 @@ body {
 .content__col-1 {
   display: flex;
   flex-grow: 2;
-  flex-shrink: 1;
   align-items: center;
   justify-content: flex-end; }
   @media only screen and (max-width: 1050px) {
@@ -37,14 +36,12 @@ body {
 .content__col-2 {
   display: flex;
   flex-direction: column;
-  flex-shrink: 1;
   flex-grow: 1;
   align-items: center;
   justify-content: space-evenly; }
 
 .content__col-3 {
   display: flex;
-  flex-shrink: 1;
   flex-grow: 2;
   align-items: center;
   justify-content: flex-start; }
@@ -56,7 +53,7 @@ body {
   max-height: 14.5rem;
   max-width: 22rem;
   box-shadow: 0 14px 28px rgba(65, 57, 57, 0), 0 10px 10px rgba(0, 0, 0, 0.22);
-  border-radius: .3rem; }
+  border-radius: 0.3rem; }
   @media only screen and (max-width: 1050px) {
     .box {
       margin-top: 1.5rem; } }
@@ -66,14 +63,14 @@ body {
     font-size: 1.32rem; }
   .box-description {
     color: var(--color-grayish-blue);
-    font-size: .85rem;
+    font-size: 0.85rem;
     font-weight: 400;
-    margin-top: .5rem; }
+    margin-top: 0.5rem; }
   .box-icon {
     position: relative;
     align-self: flex-end;
     top: 1rem;
-    right: .5rem; }
+    right: 0.5rem; }
   .box-red {
     border-top: 0.2rem solid var(--color-red); }
   .box-cyan {
@@ -94,11 +91,15 @@ body {
     @media only screen and (max-width: 406px) {
       .box-blue {
         margin-bottom: 4rem; } }
+  .box:hover {
+    box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.4rem);
+    transition: all 0.3s; }
 
 .header__title {
   font-size: 2rem;
   color: var(--color-dark-blue);
-  letter-spacing: .8px; }
+  letter-spacing: 0.8px; }
   .header__title-pre {
     font-weight: 200;
     text-align: center; }
@@ -138,7 +139,7 @@ body {
   flex-direction: column; }
 
 .header {
-  height: 11rem; }
+  height: 23vh; }
   .header__spacer {
     height: 3rem; }
   .header__title {
@@ -148,7 +149,7 @@ body {
 
 .content {
   display: flex;
-  height: 33rem;
+  height: 70vh;
   margin-top: 2.2rem; }
   @media only screen and (max-width: 1050px) {
     .content {
@@ -160,6 +161,9 @@ body {
   flex-direction: column; }
 
 .footer {
-  height: 4rem;
+  height: 1vh;
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 1050px) {
+    .footer {
+      margin-top: auto; } }

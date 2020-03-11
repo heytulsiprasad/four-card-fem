@@ -4,7 +4,7 @@
 }
 
 .header {
-    height: 11rem;
+    height: 23vh;
 
     &__spacer {
         height: 3rem;
@@ -19,7 +19,7 @@
 
 .content {
     display: flex;
-    height: 33rem;
+    height: 70vh;
     margin-top: 2.2rem;
 
     @media only screen and (max-width: $bp-medium) {
@@ -34,8 +34,11 @@
 }
 
 .footer {
-
-    height: 4rem;
+    height: 1vh;
     display: flex;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-top: auto;
+    }
 }

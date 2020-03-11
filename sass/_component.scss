@@ -1,8 +1,9 @@
 .content {
+
+
     &__col-1 {
         display: flex;
         flex-grow: 2;
-        flex-shrink: 1;
         align-items: center;
         justify-content: flex-end;
 
@@ -14,16 +15,13 @@
     &__col-2 {
         display: flex;
         flex-direction: column;
-        flex-shrink: 1;
         flex-grow: 1;
         align-items: center;
         justify-content: space-evenly;
-
     }
 
     &__col-3 {
         display: flex;
-        flex-shrink: 1;
         flex-grow: 2;
         align-items: center;
         justify-content: flex-start;
@@ -37,9 +35,8 @@
 .box {
     max-height: 14.5rem;
     max-width: 22rem;
-    box-shadow: 0 14px 28px rgba(65, 57, 57, 0),
-        0 10px 10px rgba(0, 0, 0, 0.22);
-    border-radius: .3rem;
+    box-shadow: 0 14px 28px rgba(65, 57, 57, 0), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 0.3rem;
 
     @media only screen and (max-width: $bp-medium) {
         margin-top: 1.5rem;
@@ -53,24 +50,24 @@
 
     &-description {
         color: var(--color-grayish-blue);
-        font-size: .85rem;
+        font-size: 0.85rem;
         font-weight: 400;
-        margin-top: .5rem;
+        margin-top: 0.5rem;
     }
 
     &-icon {
         position: relative;
         align-self: flex-end;
         top: 1rem;
-        right: .5rem;
+        right: 0.5rem;
     }
 
     &-red {
-        border-top: .2rem solid var(--color-red);
+        border-top: 0.2rem solid var(--color-red);
     }
 
     &-cyan {
-        border-top: .2rem solid var(--color-cyan);
+        border-top: 0.2rem solid var(--color-cyan);
 
         @media only screen and (max-width: $bp-medium) {
             margin-top: 3rem;
@@ -82,11 +79,11 @@
     }
 
     &-orange {
-        border-top: .2rem solid var(--color-orange);
+        border-top: 0.2rem solid var(--color-orange);
     }
 
     &-blue {
-        border-top: .2rem solid var(--color-blue);
+        border-top: 0.2rem solid var(--color-blue);
 
         @media only screen and (max-width: $bp-medium) {
             margin-bottom: 3rem;
@@ -96,14 +93,19 @@
             margin-bottom: 4rem;
         }
     }
+
+    &:hover {
+        box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.3);
+        transform: translateY(-0.4rem);
+        transition: all 0.3s;
+    }
 }
 
 .header {
     &__title {
         font-size: 2rem;
         color: var(--color-dark-blue);
-        letter-spacing: .8px;
-
+        letter-spacing: 0.8px;
 
         &-pre {
             font-weight: 200;
@@ -140,7 +142,6 @@
             }
         }
     }
-
 }
 
 .attribution {
