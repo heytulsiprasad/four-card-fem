@@ -100,18 +100,15 @@ body {
   font-size: 2rem;
   color: var(--color-dark-blue);
   letter-spacing: 0.8px; }
+  @media only screen and (max-width: 406px) {
+    .header__title {
+      font-size: 1.6rem; } }
   .header__title-pre {
     font-weight: 200;
     text-align: center; }
-    @media only screen and (max-width: 406px) {
-      .header__title-pre {
-        font-size: 1.6rem; } }
   .header__title-post {
     font-weight: 600;
     text-align: center; }
-    @media only screen and (max-width: 406px) {
-      .header__title-post {
-        font-size: 1.6rem; } }
 
 .header__caption {
   margin-top: 1rem;
@@ -127,8 +124,7 @@ body {
         width: 40%; } }
 
 .attribution {
-  font-size: 11px;
-  align-self: center; }
+  font-size: 11px; }
 
 .attribution a {
   text-decoration: none;
@@ -139,7 +135,7 @@ body {
   flex-direction: column; }
 
 .header {
-  height: 23vh; }
+  min-height: 23vh; }
   .header__spacer {
     height: 3rem; }
   .header__title {
@@ -149,7 +145,7 @@ body {
 
 .content {
   display: flex;
-  height: 70vh;
+  min-height: 68vh;
   margin-top: 2.2rem; }
   @media only screen and (max-width: 1050px) {
     .content {
@@ -161,9 +157,12 @@ body {
   flex-direction: column; }
 
 .footer {
-  height: 1vh;
+  height: 2vh;
+  margin-top: -.5rem;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   @media only screen and (max-width: 1050px) {
     .footer {
-      margin-top: auto; } }
+      margin-top: -2rem;
+      height: 10vh; } }

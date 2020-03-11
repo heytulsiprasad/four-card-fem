@@ -1,4 +1,3 @@
-
 :root {
     --color-red: hsl(0, 78%, 62%);
     --color-cyan: hsl(180, 62%, 55%);
@@ -12,7 +11,7 @@
 
 $bp-largest: 1440px;
 $bp-medium: 1050px;
-$bp-smallest: 406px; 
+$bp-smallest: 406px;
 
 * {
     margin: 0;
@@ -30,8 +29,7 @@ html {
     box-sizing: border-box;
 }
 
-body {      
+body {
     font-family: "Poppins", sans-serif;
     background-color: var(--color-light-gray);
 }
-
